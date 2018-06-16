@@ -17,6 +17,27 @@
 		1A2B6D3320D50BF800BDE7E3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3220D50BF800BDE7E3 /* Realm.framework */; };
 		1A2B6D3720D50CA800BDE7E3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3620D50CA800BDE7E3 /* RealmSwift.framework */; };
 		1A2B6D3920D50ECE00BDE7E3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3820D50ECE00BDE7E3 /* RxCocoa.framework */; };
+		975E8F7320D5151D00A02A69 /* mypage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7220D5151D00A02A69 /* mypage.swift */; };
+		975E8F7520D5152800A02A69 /* mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F7420D5152800A02A69 /* mypage.storyboard */; };
+		975E8F7720D5153400A02A69 /* exMypage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7620D5153400A02A69 /* exMypage.swift */; };
+		975E8F7920D5154B00A02A69 /* KanjiHeyaSakusei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7820D5154B00A02A69 /* KanjiHeyaSakusei.swift */; };
+		975E8F7B20D5155F00A02A69 /* KanjiHeyaSakusei.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F7A20D5155F00A02A69 /* KanjiHeyaSakusei.storyboard */; };
+		975E8F7D20D5157100A02A69 /* exKanjiHeyaSakusei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7C20D5157100A02A69 /* exKanjiHeyaSakusei.swift */; };
+		975E8F7F20D5158400A02A69 /* KanjiStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7E20D5158400A02A69 /* KanjiStart.swift */; };
+		975E8F8120D5158E00A02A69 /* KanjiStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F8020D5158E00A02A69 /* KanjiStart.storyboard */; };
+		975E8F8320D515A600A02A69 /* exKanjiStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F8220D515A600A02A69 /* exKanjiStart.swift */; };
+		975E8F8620D515C500A02A69 /* UserNyusitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F8520D515C500A02A69 /* UserNyusitu.swift */; };
+		975E8F8820D515D200A02A69 /* UserNyusitu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F8720D515D200A02A69 /* UserNyusitu.storyboard */; };
+		975E8F8A20D515DF00A02A69 /* exUserNyusitu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F8920D515DF00A02A69 /* exUserNyusitu.swift */; };
+		975E8F8C20D515F300A02A69 /* UserTaiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F8B20D515F300A02A69 /* UserTaiki.swift */; };
+		975E8F8E20D515FE00A02A69 /* UserTaiki.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F8D20D515FE00A02A69 /* UserTaiki.storyboard */; };
+		975E8F9020D5160A00A02A69 /* exUserTaiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F8F20D5160A00A02A69 /* exUserTaiki.swift */; };
+		975E8F9220D5161C00A02A69 /* UserKekka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9120D5161C00A02A69 /* UserKekka.swift */; };
+		975E8F9420D5162C00A02A69 /* UserKekka.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F9320D5162C00A02A69 /* UserKekka.storyboard */; };
+		975E8F9620D5164C00A02A69 /* exUserKekka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9520D5164C00A02A69 /* exUserKekka.swift */; };
+		975E8F9920D516BE00A02A69 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9820D516BE00A02A69 /* Match.swift */; };
+		975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F9A20D516CC00A02A69 /* Match.storyboard */; };
+		975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9C20D516D600A02A69 /* exMatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +58,27 @@
 		1A2B6D3420D50C9700BDE7E3 /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
 		1A2B6D3620D50CA800BDE7E3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		1A2B6D3820D50ECE00BDE7E3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		975E8F7220D5151D00A02A69 /* mypage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypage.swift; sourceTree = "<group>"; };
+		975E8F7420D5152800A02A69 /* mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mypage.storyboard; sourceTree = "<group>"; };
+		975E8F7620D5153400A02A69 /* exMypage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMypage.swift; sourceTree = "<group>"; };
+		975E8F7820D5154B00A02A69 /* KanjiHeyaSakusei.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiHeyaSakusei.swift; sourceTree = "<group>"; };
+		975E8F7A20D5155F00A02A69 /* KanjiHeyaSakusei.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KanjiHeyaSakusei.storyboard; sourceTree = "<group>"; };
+		975E8F7C20D5157100A02A69 /* exKanjiHeyaSakusei.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exKanjiHeyaSakusei.swift; sourceTree = "<group>"; };
+		975E8F7E20D5158400A02A69 /* KanjiStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiStart.swift; sourceTree = "<group>"; };
+		975E8F8020D5158E00A02A69 /* KanjiStart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KanjiStart.storyboard; sourceTree = "<group>"; };
+		975E8F8220D515A600A02A69 /* exKanjiStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exKanjiStart.swift; sourceTree = "<group>"; };
+		975E8F8520D515C500A02A69 /* UserNyusitu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNyusitu.swift; sourceTree = "<group>"; };
+		975E8F8720D515D200A02A69 /* UserNyusitu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserNyusitu.storyboard; sourceTree = "<group>"; };
+		975E8F8920D515DF00A02A69 /* exUserNyusitu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exUserNyusitu.swift; sourceTree = "<group>"; };
+		975E8F8B20D515F300A02A69 /* UserTaiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTaiki.swift; sourceTree = "<group>"; };
+		975E8F8D20D515FE00A02A69 /* UserTaiki.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTaiki.storyboard; sourceTree = "<group>"; };
+		975E8F8F20D5160A00A02A69 /* exUserTaiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exUserTaiki.swift; sourceTree = "<group>"; };
+		975E8F9120D5161C00A02A69 /* UserKekka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKekka.swift; sourceTree = "<group>"; };
+		975E8F9320D5162C00A02A69 /* UserKekka.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserKekka.storyboard; sourceTree = "<group>"; };
+		975E8F9520D5164C00A02A69 /* exUserKekka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exUserKekka.swift; sourceTree = "<group>"; };
+		975E8F9820D516BE00A02A69 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		975E8F9A20D516CC00A02A69 /* Match.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
+		975E8F9C20D516D600A02A69 /* exMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				1A1951F020D4F25000CB72D1 /* karaoke_iOS */,
+				975E8F6A20D514B200A02A69 /* mypage */,
+				975E8F6920D5149500A02A69 /* KanjiHeyaSakusei */,
+				975E8F6820D5147800A02A69 /* KanjiStart */,
+				975E8F6720D5143700A02A69 /* UserNyusitu */,
+				975E8F6620D5142400A02A69 /* UserTaiki */,
+				975E8F6520D5140E00A02A69 /* UserKekka */,
+				975E8F6420D513F700A02A69 /* Match */,
 				1A1951EF20D4F25000CB72D1 /* Products */,
 				1A19520320D500EF00CB72D1 /* Frameworks */,
 			);
@@ -100,6 +149,76 @@
 				1A19520620D500F000CB72D1 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		975E8F6420D513F700A02A69 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F9820D516BE00A02A69 /* Match.swift */,
+				975E8F9A20D516CC00A02A69 /* Match.storyboard */,
+				975E8F9C20D516D600A02A69 /* exMatch.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		975E8F6520D5140E00A02A69 /* UserKekka */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F9120D5161C00A02A69 /* UserKekka.swift */,
+				975E8F9320D5162C00A02A69 /* UserKekka.storyboard */,
+				975E8F9520D5164C00A02A69 /* exUserKekka.swift */,
+			);
+			path = UserKekka;
+			sourceTree = "<group>";
+		};
+		975E8F6620D5142400A02A69 /* UserTaiki */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F8B20D515F300A02A69 /* UserTaiki.swift */,
+				975E8F8D20D515FE00A02A69 /* UserTaiki.storyboard */,
+				975E8F8F20D5160A00A02A69 /* exUserTaiki.swift */,
+			);
+			path = UserTaiki;
+			sourceTree = "<group>";
+		};
+		975E8F6720D5143700A02A69 /* UserNyusitu */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F8520D515C500A02A69 /* UserNyusitu.swift */,
+				975E8F8720D515D200A02A69 /* UserNyusitu.storyboard */,
+				975E8F8920D515DF00A02A69 /* exUserNyusitu.swift */,
+			);
+			path = UserNyusitu;
+			sourceTree = "<group>";
+		};
+		975E8F6820D5147800A02A69 /* KanjiStart */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F7E20D5158400A02A69 /* KanjiStart.swift */,
+				975E8F8020D5158E00A02A69 /* KanjiStart.storyboard */,
+				975E8F8220D515A600A02A69 /* exKanjiStart.swift */,
+			);
+			path = KanjiStart;
+			sourceTree = "<group>";
+		};
+		975E8F6920D5149500A02A69 /* KanjiHeyaSakusei */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F7820D5154B00A02A69 /* KanjiHeyaSakusei.swift */,
+				975E8F7A20D5155F00A02A69 /* KanjiHeyaSakusei.storyboard */,
+				975E8F7C20D5157100A02A69 /* exKanjiHeyaSakusei.swift */,
+			);
+			path = KanjiHeyaSakusei;
+			sourceTree = "<group>";
+		};
+		975E8F6A20D514B200A02A69 /* mypage */ = {
+			isa = PBXGroup;
+			children = (
+				975E8F7220D5151D00A02A69 /* mypage.swift */,
+				975E8F7420D5152800A02A69 /* mypage.storyboard */,
+				975E8F7620D5153400A02A69 /* exMypage.swift */,
+			);
+			path = mypage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +280,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975E8F7520D5152800A02A69 /* mypage.storyboard in Resources */,
 				1A1951FC20D4F25300CB72D1 /* LaunchScreen.storyboard in Resources */,
 				1A1951F920D4F25300CB72D1 /* Assets.xcassets in Resources */,
 				1A1951F720D4F25000CB72D1 /* Main.storyboard in Resources */,
+				975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */,
+				975E8F8820D515D200A02A69 /* UserNyusitu.storyboard in Resources */,
+				975E8F8E20D515FE00A02A69 /* UserTaiki.storyboard in Resources */,
+				975E8F9420D5162C00A02A69 /* UserKekka.storyboard in Resources */,
+				975E8F7B20D5155F00A02A69 /* KanjiHeyaSakusei.storyboard in Resources */,
+				975E8F8120D5158E00A02A69 /* KanjiStart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +321,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975E8F8C20D515F300A02A69 /* UserTaiki.swift in Sources */,
+				975E8F9220D5161C00A02A69 /* UserKekka.swift in Sources */,
+				975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */,
+				975E8F9020D5160A00A02A69 /* exUserTaiki.swift in Sources */,
+				975E8F8620D515C500A02A69 /* UserNyusitu.swift in Sources */,
+				975E8F7D20D5157100A02A69 /* exKanjiHeyaSakusei.swift in Sources */,
+				975E8F7720D5153400A02A69 /* exMypage.swift in Sources */,
+				975E8F8320D515A600A02A69 /* exKanjiStart.swift in Sources */,
 				1A1951F420D4F25000CB72D1 /* ViewController.swift in Sources */,
+				975E8F9920D516BE00A02A69 /* Match.swift in Sources */,
+				975E8F8A20D515DF00A02A69 /* exUserNyusitu.swift in Sources */,
+				975E8F7F20D5158400A02A69 /* KanjiStart.swift in Sources */,
+				975E8F7920D5154B00A02A69 /* KanjiHeyaSakusei.swift in Sources */,
+				975E8F7320D5151D00A02A69 /* mypage.swift in Sources */,
 				1A1951F220D4F25000CB72D1 /* AppDelegate.swift in Sources */,
+				975E8F9620D5164C00A02A69 /* exUserKekka.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
