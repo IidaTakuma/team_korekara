@@ -16,6 +16,9 @@
 		1A2B6D3320D50BF800BDE7E3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3220D50BF800BDE7E3 /* Realm.framework */; };
 		1A2B6D3720D50CA800BDE7E3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3620D50CA800BDE7E3 /* RealmSwift.framework */; };
 		1A2B6D3920D50ECE00BDE7E3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3820D50ECE00BDE7E3 /* RxCocoa.framework */; };
+		1A2B6D3B20D56EB200BDE7E3 /* ex_ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B6D3A20D56EB200BDE7E3 /* ex_ArtistModel.swift */; };
+		1A2B6D3D20D5718700BDE7E3 /* ex_UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B6D3C20D5718700BDE7E3 /* ex_UserModel.swift */; };
+		1A2B6D3F20D571C800BDE7E3 /* ex_RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B6D3E20D571C800BDE7E3 /* ex_RoomModel.swift */; };
 		975E8F7320D5151D00A02A69 /* mypage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7220D5151D00A02A69 /* mypage.swift */; };
 		975E8F7520D5152800A02A69 /* mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F7420D5152800A02A69 /* mypage.storyboard */; };
 		975E8F7720D5153400A02A69 /* exMypage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F7620D5153400A02A69 /* exMypage.swift */; };
@@ -57,6 +60,9 @@
 		1A2B6D3420D50C9700BDE7E3 /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
 		1A2B6D3620D50CA800BDE7E3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		1A2B6D3820D50ECE00BDE7E3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1A2B6D3A20D56EB200BDE7E3 /* ex_ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex_ArtistModel.swift; sourceTree = "<group>"; };
+		1A2B6D3C20D5718700BDE7E3 /* ex_UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex_UserModel.swift; sourceTree = "<group>"; };
+		1A2B6D3E20D571C800BDE7E3 /* ex_RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex_RoomModel.swift; sourceTree = "<group>"; };
 		975E8F7220D5151D00A02A69 /* mypage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypage.swift; sourceTree = "<group>"; };
 		975E8F7420D5152800A02A69 /* mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mypage.storyboard; sourceTree = "<group>"; };
 		975E8F7620D5153400A02A69 /* exMypage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMypage.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 			children = (
 				1A1951F120D4F25000CB72D1 /* AppDelegate.swift */,
 				1A1951F320D4F25000CB72D1 /* ViewController.swift */,
+				1A2B6D3A20D56EB200BDE7E3 /* ex_ArtistModel.swift */,
+				1A2B6D3C20D5718700BDE7E3 /* ex_UserModel.swift */,
+				1A2B6D3E20D571C800BDE7E3 /* ex_RoomModel.swift */,
 				1A1951F520D4F25000CB72D1 /* Main.storyboard */,
 				A9A7678F20D5648D00F51F7C /* Assets.xcassets */,
 				1A1951FA20D4F25300CB72D1 /* LaunchScreen.storyboard */,
@@ -327,14 +336,17 @@
 				975E8F9020D5160A00A02A69 /* exUserTaiki.swift in Sources */,
 				975E8F8620D515C500A02A69 /* UserNyusitu.swift in Sources */,
 				975E8F7D20D5157100A02A69 /* exKanjiHeyaSakusei.swift in Sources */,
+				1A2B6D3B20D56EB200BDE7E3 /* ex_ArtistModel.swift in Sources */,
 				975E8F7720D5153400A02A69 /* exMypage.swift in Sources */,
 				975E8F8320D515A600A02A69 /* exKanjiStart.swift in Sources */,
 				1A1951F420D4F25000CB72D1 /* ViewController.swift in Sources */,
 				975E8F9920D516BE00A02A69 /* Match.swift in Sources */,
 				975E8F8A20D515DF00A02A69 /* exUserNyusitu.swift in Sources */,
+				1A2B6D3F20D571C800BDE7E3 /* ex_RoomModel.swift in Sources */,
 				975E8F7F20D5158400A02A69 /* KanjiStart.swift in Sources */,
 				975E8F7920D5154B00A02A69 /* KanjiHeyaSakusei.swift in Sources */,
 				975E8F7320D5151D00A02A69 /* mypage.swift in Sources */,
+				1A2B6D3D20D5718700BDE7E3 /* ex_UserModel.swift in Sources */,
 				1A1951F220D4F25000CB72D1 /* AppDelegate.swift in Sources */,
 				975E8F9620D5164C00A02A69 /* exUserKekka.swift in Sources */,
 			);
