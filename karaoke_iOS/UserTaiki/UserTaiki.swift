@@ -10,9 +10,15 @@ import UIKit
 
 class UserTaiki: UIViewController {
 
+    var roomid:String!
+    var flag:Bool = true
+    @IBOutlet weak var roomidLabel: UILabel!
+    
+    @IBOutlet weak var resultButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        roomidLabel.text = roomid
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +27,10 @@ class UserTaiki: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func resultLabel(_ sender: Any) {
+        resultFlag()
+    }
+    
     /*
     // MARK: - Navigation
 
