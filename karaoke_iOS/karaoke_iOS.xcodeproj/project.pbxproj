@@ -41,6 +41,7 @@
 		975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F9A20D516CC00A02A69 /* Match.storyboard */; };
 		975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9C20D516D600A02A69 /* exMatch.swift */; };
 		A93F45EB20D59FB90077629D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93F45EA20D59FB90077629D /* TabBar.storyboard */; };
+		A93F45ED20D5A4610077629D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93F45EC20D5A4610077629D /* Charts.framework */; };
 		A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7678F20D5648D00F51F7C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		975E8F9A20D516CC00A02A69 /* Match.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
 		975E8F9C20D516D600A02A69 /* exMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMatch.swift; sourceTree = "<group>"; };
 		A93F45EA20D59FB90077629D /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		A93F45EC20D5A4610077629D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		A9A7678F20D5648D00F51F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93F45ED20D5A4610077629D /* Charts.framework in Frameworks */,
 				1A2B6D3920D50ECE00BDE7E3 /* RxCocoa.framework in Frameworks */,
 				1A2B6D3720D50CA800BDE7E3 /* RealmSwift.framework in Frameworks */,
 				1A2B6D3320D50BF800BDE7E3 /* Realm.framework in Frameworks */,
@@ -149,6 +152,7 @@
 		1A19520320D500EF00CB72D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A93F45EC20D5A4610077629D /* Charts.framework */,
 				1A2B6D3820D50ECE00BDE7E3 /* RxCocoa.framework */,
 				1A2B6D3620D50CA800BDE7E3 /* RealmSwift.framework */,
 				1A2B6D3420D50C9700BDE7E3 /* RealmSwift.framework.dSYM */,
@@ -320,6 +324,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
 			);
 			outputPaths = (
 			);
