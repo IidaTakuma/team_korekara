@@ -10,6 +10,10 @@ import UIKit
 
 class UserNyusitu: UIViewController {
 
+    
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +25,10 @@ class UserNyusitu: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func NyushitsuButton(_ sender: Any) {
+        nyushitsu()
+    }
+    
     /*
     // MARK: - Navigation
 
