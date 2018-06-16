@@ -15,6 +15,7 @@ class UserTaiki: UIViewController {
     @IBOutlet weak var roomidLabel: UILabel!
     
     @IBOutlet weak var resultButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
