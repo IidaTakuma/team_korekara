@@ -10,6 +10,15 @@ import UIKit
 
 class KanjiStart: UIViewController {
 
+    @IBOutlet weak var roomId: UILabel!
+    @IBOutlet weak var password: UILabel!
+    
+    @IBOutlet weak var omakase: UIButton!
+    @IBOutlet weak var ganre: UIButton!
+    @IBOutlet weak var artist: UIButton!
+    
+    @IBOutlet weak var start: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

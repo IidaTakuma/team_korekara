@@ -10,6 +10,11 @@ import UIKit
 
 class KanjiHeyaSakusei: UIViewController {
 
+    @IBOutlet weak var roomId: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var roomCount: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
