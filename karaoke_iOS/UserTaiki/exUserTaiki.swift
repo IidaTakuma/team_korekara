@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+extension UserTaiki{
+    func resultFlag () {
+        //結果ボタンの表示を切り替えたい
+    }
+}

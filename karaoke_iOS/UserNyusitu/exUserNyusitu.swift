@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+extension UserNyusitu {
+    
+    func nyushitsu(){
+        
+    }
+}
