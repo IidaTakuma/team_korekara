@@ -10,7 +10,6 @@
 		1A1951F220D4F25000CB72D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1951F120D4F25000CB72D1 /* AppDelegate.swift */; };
 		1A1951F420D4F25000CB72D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1951F320D4F25000CB72D1 /* ViewController.swift */; };
 		1A1951F720D4F25000CB72D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1951F520D4F25000CB72D1 /* Main.storyboard */; };
-		1A1951F920D4F25300CB72D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1951F820D4F25300CB72D1 /* Assets.xcassets */; };
 		1A1951FC20D4F25300CB72D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1951FA20D4F25300CB72D1 /* LaunchScreen.storyboard */; };
 		1A2B6D2F20D50B9D00BDE7E3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D2E20D50B9D00BDE7E3 /* Alamofire.framework */; };
 		1A2B6D3120D50BAF00BDE7E3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2B6D3020D50BAF00BDE7E3 /* RxSwift.framework */; };
@@ -38,6 +37,7 @@
 		975E8F9920D516BE00A02A69 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9820D516BE00A02A69 /* Match.swift */; };
 		975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F9A20D516CC00A02A69 /* Match.storyboard */; };
 		975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9C20D516D600A02A69 /* exMatch.swift */; };
+		A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7678F20D5648D00F51F7C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,6 @@
 		1A1951F120D4F25000CB72D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A1951F320D4F25000CB72D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A1951F620D4F25000CB72D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A1951F820D4F25300CB72D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1951FB20D4F25300CB72D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A1951FD20D4F25300CB72D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A19520420D500F000CB72D1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		975E8F9820D516BE00A02A69 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		975E8F9A20D516CC00A02A69 /* Match.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
 		975E8F9C20D516D600A02A69 /* exMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMatch.swift; sourceTree = "<group>"; };
+		A9A7678F20D5648D00F51F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 				1A1951F120D4F25000CB72D1 /* AppDelegate.swift */,
 				1A1951F320D4F25000CB72D1 /* ViewController.swift */,
 				1A1951F520D4F25000CB72D1 /* Main.storyboard */,
-				1A1951F820D4F25300CB72D1 /* Assets.xcassets */,
+				A9A7678F20D5648D00F51F7C /* Assets.xcassets */,
 				1A1951FA20D4F25300CB72D1 /* LaunchScreen.storyboard */,
 				1A1951FD20D4F25300CB72D1 /* Info.plist */,
 			);
@@ -282,9 +282,9 @@
 			files = (
 				975E8F7520D5152800A02A69 /* mypage.storyboard in Resources */,
 				1A1951FC20D4F25300CB72D1 /* LaunchScreen.storyboard in Resources */,
-				1A1951F920D4F25300CB72D1 /* Assets.xcassets in Resources */,
 				1A1951F720D4F25000CB72D1 /* Main.storyboard in Resources */,
 				975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */,
+				A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */,
 				975E8F8820D515D200A02A69 /* UserNyusitu.storyboard in Resources */,
 				975E8F8E20D515FE00A02A69 /* UserTaiki.storyboard in Resources */,
 				975E8F9420D5162C00A02A69 /* UserKekka.storyboard in Resources */,
@@ -481,12 +481,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33U5H2RE58;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = karaoke_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,12 +504,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33U5H2RE58;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = karaoke_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
