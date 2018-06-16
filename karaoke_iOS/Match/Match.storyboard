@@ -49,14 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="好きなアーティスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbS-as-Pwq">
-                                <rect key="frame" x="109" y="570" width="156" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パーセント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-iZ-ItV">
-                                <rect key="frame" x="254" y="527" width="87" height="21"/>
+                                <rect key="frame" x="109" y="529" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,14 +60,13 @@
                         <viewLayoutGuide key="safeArea" id="mEi-Je-Jfk"/>
                     </view>
                     <connections>
-                        <outlet property="percent" destination="8aU-iZ-ItV" id="43V-6r-ehV"/>
                         <outlet property="userName" destination="W68-ch-uFw" id="qtr-hU-J2N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaC-3A-sli" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QOR-A1-Tw6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="97" y="332"/>
+            <point key="canvasLocation" x="96.799999999999997" y="331.48425787106447"/>
         </scene>
     </scenes>
     <resources>
