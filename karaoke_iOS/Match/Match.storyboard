@@ -62,6 +62,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qev-n2-CWG">
+                                <rect key="frame" x="67" y="200" width="240" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mEi-Je-Jfk"/>
@@ -74,7 +79,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaC-3A-sli" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QOR-A1-Tw6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="97" y="332"/>
+            <point key="canvasLocation" x="96.799999999999997" y="331.48425787106447"/>
         </scene>
     </scenes>
     <resources>

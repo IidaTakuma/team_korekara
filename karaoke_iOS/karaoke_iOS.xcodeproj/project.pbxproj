@@ -40,6 +40,7 @@
 		975E8F9920D516BE00A02A69 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9820D516BE00A02A69 /* Match.swift */; };
 		975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E8F9A20D516CC00A02A69 /* Match.storyboard */; };
 		975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9C20D516D600A02A69 /* exMatch.swift */; };
+		A93F45EB20D59FB90077629D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93F45EA20D59FB90077629D /* TabBar.storyboard */; };
 		A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7678F20D5648D00F51F7C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		975E8F9820D516BE00A02A69 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		975E8F9A20D516CC00A02A69 /* Match.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Match.storyboard; sourceTree = "<group>"; };
 		975E8F9C20D516D600A02A69 /* exMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMatch.swift; sourceTree = "<group>"; };
+		A93F45EA20D59FB90077629D /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		A9A7678F20D5648D00F51F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				1A1951F120D4F25000CB72D1 /* AppDelegate.swift */,
 				1A1951F320D4F25000CB72D1 /* ViewController.swift */,
 				1A2B6D3A20D56EB200BDE7E3 /* ex_ArtistModel.swift */,
+				A93F45EA20D59FB90077629D /* TabBar.storyboard */,
 				1A2B6D3C20D5718700BDE7E3 /* ex_UserModel.swift */,
 				1A2B6D3E20D571C800BDE7E3 /* ex_RoomModel.swift */,
 				1A1951F520D4F25000CB72D1 /* Main.storyboard */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				975E8F7520D5152800A02A69 /* mypage.storyboard in Resources */,
+				A93F45EB20D59FB90077629D /* TabBar.storyboard in Resources */,
 				1A1951FC20D4F25300CB72D1 /* LaunchScreen.storyboard in Resources */,
 				1A1951F720D4F25000CB72D1 /* Main.storyboard in Resources */,
 				975E8F9B20D516CC00A02A69 /* Match.storyboard in Resources */,
