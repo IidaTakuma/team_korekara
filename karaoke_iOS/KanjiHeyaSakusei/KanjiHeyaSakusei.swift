@@ -8,16 +8,23 @@
 
 import UIKit
 
-class KanjiHeyaSakusei: UIViewController {
+class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var roomId: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var roomCount: UITextField!
+
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var peopleCount: UITextField!
     
+    let cellName = "cellName"
+    var showList:[String] = []
+//    var heyaList:[String] = ["A","B"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellName)
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -26,15 +33,36 @@ class KanjiHeyaSakusei: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func reload(_ sender: Any) {
+        guard let data2 = peopleCount.text else { return }
+        if data2.isEmpty{
+            //no-op
+        } else {
+            tableView.reloadData()
+        }
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let count2 = Int(peopleCount.text!) else { return 0 }
+        showList = []
+        if count2 == 1 {
+            showList.append(String(1))
+        } else {
+            let num1 = Int(count2 / 2)
+            let num2 = count2 - num1
+            showList.append(String(num1))
+            showList.append(String(num2))
+        }
+
+        return showList.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellName, for: indexPath)
+        cell.textLabel?.text = "部屋:" + showList[indexPath.row] + "人"
+        return cell
+    }
+
 
 }

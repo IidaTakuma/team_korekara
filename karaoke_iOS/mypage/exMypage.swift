@@ -16,7 +16,7 @@ extension mypage {
         let authToken = [
             "Access-Token": UserDefaults.standard.string(forKey: "Access-Token")
         ]
-        Alamofire.request("http://160.16.77.36:8000/api/user/",parameters:authToken).response(completionHandler: { response in
+        Alamofire.request("http://160.16.77.36:8000/api/user/",headers:authToken).response(completionHandler: { response in
             if let data = response.data {
                 print(data)
                 let result = try! JSONDecoder().decode(User.self, from: data)
