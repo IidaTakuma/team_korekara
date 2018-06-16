@@ -18,12 +18,15 @@ class mypage: UIViewController {
     @IBOutlet weak var deleteBtn2: UIButton!
     @IBOutlet weak var deleteBtn3: UIButton!
     
+//    var myId: String!
+    
     @IBAction func editBtn(_ sender: Any) {
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        user_syousai()
     }
 
     override func didReceiveMemoryWarning() {
