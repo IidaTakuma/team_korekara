@@ -59,25 +59,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD7-GQ-w9T">
-                                <rect key="frame" x="59" y="495" width="62" height="30"/>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyR-Dh-KLU">
+                                <rect key="frame" x="0.0" y="456" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmq-DA-Jo2">
+                                <rect key="frame" x="117" y="522" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="おまかせ"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GG-bu-4le">
-                                <rect key="frame" x="156" y="495" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ジャンル"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-7A-GwW">
-                                <rect key="frame" x="238" y="495" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="アーティスト"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNZ-ra-6fz">
-                                <rect key="frame" x="126" y="559" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="部屋割りスタート"/>
+                                <state key="normal" title="振り分けセレクト">
+                                    <color key="titleColor" red="0.014752538071066024" green="0.014752538071066024" blue="0.014752538071066024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="huriwke:" destination="1wW-1Q-jwa" eventType="touchUpInside" id="2PU-vx-2yW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,12 +80,10 @@
                     <tabBarItem key="tabBarItem" title="Item" id="a5J-wF-hnG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="artist" destination="yDL-7A-GwW" id="qDQ-Nx-zyF"/>
-                        <outlet property="ganre" destination="4GG-bu-4le" id="cJI-rd-61b"/>
-                        <outlet property="omakase" destination="fD7-GQ-w9T" id="H2d-A2-8Ty"/>
-                        <outlet property="password" destination="npe-Ck-6Nh" id="EOT-r8-paZ"/>
-                        <outlet property="roomId" destination="HZ5-IJ-zH3" id="bsu-0U-chu"/>
-                        <outlet property="start" destination="eNZ-ra-6fz" id="4JU-sI-LwO"/>
+                        <outlet property="huriBtn" destination="Xmq-DA-Jo2" id="kH7-xp-RwH"/>
+                        <outlet property="kakuninPassword" destination="npe-Ck-6Nh" id="SEO-ue-pfa"/>
+                        <outlet property="picker" destination="QyR-Dh-KLU" id="O2Z-yY-3cH"/>
+                        <outlet property="roomKakuninId" destination="HZ5-IJ-zH3" id="oOw-M4-pIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxl-GV-m1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
