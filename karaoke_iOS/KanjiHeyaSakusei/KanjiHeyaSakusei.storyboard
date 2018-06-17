@@ -85,7 +85,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sjh-Da-QFJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1t8-7u-VTa"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="group2" id="1t8-7u-VTa"/>
                     <navigationItem key="navigationItem" title="Title" id="9yB-c7-vWD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -100,4 +100,7 @@
             <point key="canvasLocation" x="-404" y="-372.86356821589209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="group2" width="25" height="25"/>
+    </resources>
 </document>

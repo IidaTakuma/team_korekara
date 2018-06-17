@@ -12,9 +12,9 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBar.barTintColor = UIColor(red: 1, green: 0.83, blue: 0.39, alpha: 1)
         // Do any additional setup after loading the view.
-        self.selectedIndex = 0
+        self.selectedIndex = 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +25,7 @@ class MainTabBarController: UITabBarController {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item.tag {
         case 0:
-            self.tabBar.barTintColor = UIColor(red: 1, green: 0.83, blue: 0.39, alpha: 1)
+//            self.tabBar.barTintColor = UIColor(red: 1, green: 0.83, blue: 0.39, alpha: 1)
             print("新規幹事")
             break
             
