@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -63,11 +64,31 @@ class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSo
         cell.textLabel?.text = "部屋:" + showList[indexPath.row] + "人"
         return cell
     }
-
-    @IBAction func roomMake(_ sender: Any) {
+    
+    func next() {
         let storyBoard = UIStoryboard(name: "KanjiStart", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "kanjistart") as! KanjiStart
         self.present(vc, animated: true, completion: nil)
+    }
+
+    @IBAction func roomMake(_ sender: Any) {
+        let parameters: Parameters = [
+            "id": roomId.text!,
+            "password": password.text!,
+            "number": Int(peopleCount.text!)!
+        ]
+        print(parameters)
+        let header: HTTPHeaders = [
+            "Access-Token": UserDefaults.standard.string(forKey: "access_token")!
+        ]
+        Alamofire.request(Const.GroupsAPI, method: .post, parameters: parameters, headers: header).validate(statusCode: 200..<400).responseData { response in
+            switch response.result {
+            case .success:
+                self.next()
+            case .failure:
+                print("failure")
+            }
+        }
     }
     
 }

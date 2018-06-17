@@ -9,8 +9,10 @@
 import UIKit
 
 struct Const {
-    static let ApiHost: String = "http://160.16.77.36:8000"
+//    static let ApiHost: String = "http://160.16.77.36:8000"
+    static let ApiHost: String = "http://localhost:8000"
     static let AuthAPI: String = ApiHost + "/api/auth/"
     static let ArtistsAPI: String = ApiHost + "/api/artists/"
     static let UserAPI: String = ApiHost + "/api/user/"
+    static let GroupsAPI: String = ApiHost + "/api/groups/"
 }

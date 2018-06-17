@@ -33,6 +33,8 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     var artist2_id: String = ""
     var artist3_id: String = ""
 
+    var isSkip = false
+
     var artists: [ArtistParam] = []
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return artists.count
@@ -130,6 +132,37 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         } else {
             // wip
             print("skip")
+            let parameters:[String: Any] = [
+                "uuid": UIDevice.current.identifierForVendor!.uuidString
+            ]
+            Alamofire.request(Const.AuthAPI, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+                guard let data = response.data else { return }
+                print(data)
+                do {
+                    let token = try JSONDecoder().decode(TokenParam.self, from: data)
+                    print(token)
+                    UserDefaults.standard.set(token.token, forKey: "access_token")
+                    print("set")
+                    
+                    let header: HTTPHeaders = [
+                        "Access-Token": token.token
+                    ]
+                    Alamofire.request(Const.ArtistsAPI, headers:header).responseJSON { response in
+                        guard let data = response.data else { return }
+                        print(data)
+                        do {
+                            self.artists = try JSONDecoder().decode([ArtistParam].self, from: data)
+                            print(self.artists)
+                        } catch {
+                            print("json convert failed in JSONDecoder", error.localizedDescription)
+                        }
+                    }
+                } catch {
+                    print("json convert failed in JSONDecoder", error.localizedDescription)
+                }
+            }
+
+//            self.isSkip = true
             self.performSegue(withIdentifier: "toTabBar", sender: nil)
             self.next()
         }
@@ -170,6 +203,10 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     }
     
     @IBAction func touroku(_ sender: Any) {
+        if (self.isSkip) {
+            self.next()
+            return
+        }
         let parameters: Parameters = [
             "name": UserName.text!,
             "artist_ids": [
@@ -182,7 +219,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         let header: HTTPHeaders = [
             "Access-Token": UserDefaults.standard.string(forKey: "access_token")!
         ]
-        Alamofire.request(Const.UserAPI, method: .put, parameters: parameters, headers: header).validate(statusCode: 200..<400).responseData { response in
+        Alamofire.request(Const.UserAPI, method: .put, parameters: parameters, encoding: JSONEncoding.default, headers: header).validate(statusCode: 200..<400).responseData { response in
                 switch response.result {
                 case .success:
                     UserDefaults.standard.set(true, forKey: "is_registered")
