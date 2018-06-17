@@ -44,6 +44,7 @@
 		A93F45ED20D5A4610077629D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93F45EC20D5A4610077629D /* Charts.framework */; };
 		A93F45EF20D5BBAF0077629D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F45EE20D5BBAF0077629D /* MainTabBarController.swift */; };
 		A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7678F20D5648D00F51F7C /* Assets.xcassets */; };
+		D7F4C4BF20D5EFFF005367F9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4C4BE20D5EFFF005367F9 /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		A93F45EC20D5A4610077629D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		A93F45EE20D5BBAF0077629D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A9A7678F20D5648D00F51F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F4C4BE20D5EFFF005367F9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		1A1951E520D4F25000CB72D1 = {
 			isa = PBXGroup;
 			children = (
+				D7F4C4BE20D5EFFF005367F9 /* Const.swift */,
 				1A1951F020D4F25000CB72D1 /* karaoke_iOS */,
 				975E8F6A20D514B200A02A69 /* mypage */,
 				975E8F6920D5149500A02A69 /* KanjiHeyaSakusei */,
@@ -362,6 +365,7 @@
 				1A2B6D3D20D5718700BDE7E3 /* ex_UserModel.swift in Sources */,
 				1A1951F220D4F25000CB72D1 /* AppDelegate.swift in Sources */,
 				975E8F9620D5164C00A02A69 /* exUserKekka.swift in Sources */,
+				D7F4C4BF20D5EFFF005367F9 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

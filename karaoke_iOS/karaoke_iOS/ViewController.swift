@@ -7,9 +7,33 @@
 //
 
 import UIKit
+import Alamofire
+
+
+struct ArtistParam: Codable {
+    var id: String
+    var name: String
+}
+
+
+struct TokenParam: Codable {
+    var token: String
+}
 
 class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSource   {
-    var artists = [["1","2","3"],["1","2","3"],["1","2","3"]]
+//    var artists = [["1","2","3"],["1","2","3"],["1","2","3"]]
+    
+    @IBOutlet weak var UserName: UITextField!
+    @IBOutlet weak var artist1: UIButton!
+    @IBOutlet weak var artist2: UIButton!
+    @IBOutlet weak var artist3: UIButton!
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    var artist1_id: String = ""
+    var artist2_id: String = ""
+    var artist3_id: String = ""
+
+    var artists: [ArtistParam] = []
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return artists.count
     }
@@ -28,7 +52,7 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
                     titleForRow row: Int,
                     forComponent component: Int) -> String? {
         
-        return artists[component][row]
+        return artists[row].name
     }
     
     // UIPickerViewのRowが選択された時の挙動
@@ -37,19 +61,22 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
                     inComponent component: Int) {
         // 処理
         //artists[row]で値をとる
-        print("取り出し" + String(artists[component][row]))
+        print("取り出し" + String(artists[row].name))
         
         switch selectedbtnTag {
         case 0:
-            artist1.setTitle(String(artists[0][row]), for: .normal)
+            artist1.setTitle(String(artists[row].name), for: .normal)
+            artist1_id = artists[row].id
             break
             
         case 1:
-            artist2.setTitle(String(artists[1][row]), for: .normal)
+            artist2.setTitle(String(artists[row].name), for: .normal)
+            artist2_id = artists[row].id
             break
             
         case 2:
-            artist3.setTitle(String(artists[2][row]), for: .normal)
+            artist3.setTitle(String(artists[row].name), for: .normal)
+            artist3_id = artists[row].id
             break
             
         default:
@@ -57,12 +84,6 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         }
     }
     // SinkiToroku だよ
-    
-    @IBOutlet weak var UserName: UITextField!
-    @IBOutlet weak var artist1: UIButton!
-    @IBOutlet weak var artist2: UIButton!
-    @IBOutlet weak var artist3: UIButton!
-    @IBOutlet weak var pickerView: UIPickerView!
     
     var selectedbtnTag: Int = 0
     
@@ -72,7 +93,46 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         pickerView.showsSelectionIndicator = true
         pickerView.dataSource = self
         pickerView.delegate = self
-        //        pickerView.center = self.view.center
+        // pickerView.center = self.view.center
+        
+        let isResistered = UserDefaults.standard.bool(forKey: "is_registered")
+        
+        if !isResistered {
+            let parameters:[String: Any] = [
+                "uuid": UIDevice.current.identifierForVendor!.uuidString
+            ]
+            Alamofire.request(Const.AuthAPI, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+                guard let data = response.data else { return }
+                    print(data)
+                    do {
+                        let token = try JSONDecoder().decode(TokenParam.self, from: data)
+                        print(token)
+                        UserDefaults.standard.set(token.token, forKey: "access_token")
+                        print("set")
+                        
+                        let header: HTTPHeaders = [
+                            "Access-Token": token.token
+                        ]
+                        Alamofire.request(Const.ArtistsAPI, headers:header).responseJSON { response in
+                            guard let data = response.data else { return }
+                            print(data)
+                            do {
+                                self.artists = try JSONDecoder().decode([ArtistParam].self, from: data)
+                                print(self.artists)
+                            } catch {
+                                print("json convert failed in JSONDecoder", error.localizedDescription)
+                            }
+                        }
+                    } catch {
+                        print("json convert failed in JSONDecoder", error.localizedDescription)
+                    }
+                }
+        } else {
+            // wip
+            print("skip")
+            self.performSegue(withIdentifier: "toTabBar", sender: nil)
+            self.next()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -105,11 +165,32 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         })
     }
     
+    func next(){
+        self.performSegue(withIdentifier: "toTabBar", sender: nil)
+    }
+    
     @IBAction func touroku(_ sender: Any) {
-//        let storyBoard = UIStoryboard(name:"TabBar", bundle: nil)
-//        let vc = storyBoard.instantiateViewController(withIdentifier: "tabbar") as! TabBar
-//        self.present(vc, animated: true, completion: nil)
-//    }
+        let parameters: Parameters = [
+            "name": UserName.text!,
+            "artist_ids": [
+                artist1_id,
+                artist2_id,
+                artist3_id,
+            ]
+        ]
+        print(parameters)
+        let header: HTTPHeaders = [
+            "Access-Token": UserDefaults.standard.string(forKey: "access_token")!
+        ]
+        Alamofire.request(Const.UserAPI, method: .put, parameters: parameters, headers: header).validate(statusCode: 200..<400).responseData { response in
+                switch response.result {
+                case .success:
+                    UserDefaults.standard.set(true, forKey: "is_registered")
+                    self.next()
+                case .failure:
+                    print("failure")
+                }
+        }
     }
 }
 

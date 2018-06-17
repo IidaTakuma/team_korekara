@@ -111,11 +111,20 @@
                         <outlet property="artist2" destination="hi9-ri-20R" id="m4b-oy-pRc"/>
                         <outlet property="artist3" destination="OmJ-lq-sxM" id="abx-va-ayf"/>
                         <outlet property="pickerView" destination="k4R-yr-R1t" id="Cws-qQ-lKI"/>
+                        <segue destination="1N7-wE-cY3" kind="show" identifier="toTabBar" id="msQ-RE-rd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+        <!--TabBar-->
+        <scene sceneID="J4b-jK-SWG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TabBar" storyboardName="TabBar" id="1N7-wE-cY3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jP-bK-7lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="157"/>
         </scene>
     </scenes>
 </document>
