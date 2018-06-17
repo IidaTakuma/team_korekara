@@ -105,5 +105,11 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
         })
     }
     
+    @IBAction func touroku(_ sender: Any) {
+//        let storyBoard = UIStoryboard(name:"TabBar", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "tabbar") as! TabBar
+//        self.present(vc, animated: true, completion: nil)
+//    }
+    }
 }
 

@@ -42,7 +42,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="hWG-EQ-Ovc">
             <objects>
-                <tabBarController id="iHJ-kO-KoC" customClass="MainTabBarController" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="\tabbar" id="iHJ-kO-KoC" customClass="MainTabBarController" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EIw-2o-UED">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

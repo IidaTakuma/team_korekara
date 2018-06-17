@@ -29,6 +29,9 @@ class UserTaiki: UIViewController {
     }
     
     @IBAction func resultLabel(_ sender: Any) {
+        let storyBoard = UIStoryboard(name:"UserKekka", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "userkekka") as! UserKekka
+        self.present(vc, animated: true, completion: nil)
         resultFlag()
     }
     
