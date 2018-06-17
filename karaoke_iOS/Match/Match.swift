@@ -25,7 +25,7 @@ class Match: UIViewController {
         
         //1つ目のvalueにマッチ度の値をいれる。二つ目は100から1つ目のvalueを引く
         let set = PieChartDataSet(values: [PieChartDataEntry(value: 80),PieChartDataEntry(value: 20)], label: "Election Results")
-        set.setColors(UIColor(red: 1, green: 0.549, blue: 0.549, alpha: 1.0),UIColor.white)
+        set.setColors(UIColor(red: 0.95 , green: 0.41, blue: 0.39, alpha: 1.0),UIColor.white)
         chartview.data = PieChartData(dataSet: set)
         self.view.addSubview(chartview)
     }

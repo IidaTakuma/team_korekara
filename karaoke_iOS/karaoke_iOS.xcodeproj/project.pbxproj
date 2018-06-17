@@ -42,6 +42,7 @@
 		975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E8F9C20D516D600A02A69 /* exMatch.swift */; };
 		A93F45EB20D59FB90077629D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93F45EA20D59FB90077629D /* TabBar.storyboard */; };
 		A93F45ED20D5A4610077629D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93F45EC20D5A4610077629D /* Charts.framework */; };
+		A93F45EF20D5BBAF0077629D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F45EE20D5BBAF0077629D /* MainTabBarController.swift */; };
 		A9A7679020D5648D00F51F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7678F20D5648D00F51F7C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		975E8F9C20D516D600A02A69 /* exMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exMatch.swift; sourceTree = "<group>"; };
 		A93F45EA20D59FB90077629D /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		A93F45EC20D5A4610077629D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		A93F45EE20D5BBAF0077629D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A9A7678F20D5648D00F51F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				A9A7678F20D5648D00F51F7C /* Assets.xcassets */,
 				1A1951FA20D4F25300CB72D1 /* LaunchScreen.storyboard */,
 				1A1951FD20D4F25300CB72D1 /* Info.plist */,
+				A93F45EE20D5BBAF0077629D /* MainTabBarController.swift */,
 			);
 			path = karaoke_iOS;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				975E8F8C20D515F300A02A69 /* UserTaiki.swift in Sources */,
 				975E8F9220D5161C00A02A69 /* UserKekka.swift in Sources */,
+				A93F45EF20D5BBAF0077629D /* MainTabBarController.swift in Sources */,
 				975E8F9D20D516D600A02A69 /* exMatch.swift in Sources */,
 				975E8F9020D5160A00A02A69 /* exUserTaiki.swift in Sources */,
 				975E8F8620D515C500A02A69 /* UserNyusitu.swift in Sources */,
