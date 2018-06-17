@@ -81,6 +81,14 @@
                                     <navigationItem title="部屋作成" id="Sao-i4-PkU"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-TE-wUR">
+                                <rect key="frame" x="172" y="578" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="作成"/>
+                                <connections>
+                                    <action selector="roomMake:" destination="X89-6h-Ao7" eventType="touchUpInside" id="Ksy-NP-lvd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sjh-Da-QFJ"/>

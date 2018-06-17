@@ -64,5 +64,10 @@ class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell
     }
 
-
+    @IBAction func roomMake(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "KanjiStart", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "kanjistart") as! KanjiStart
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }

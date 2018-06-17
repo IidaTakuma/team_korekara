@@ -99,5 +99,12 @@ class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  
         // Pass the selected object to the new view controller.
     }
     */
+        
     }
+    @IBAction func kettei(_ sender: Any) {
+        let storyBoard = UIStoryboard(name:"UserKekka", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "userkekka") as! UserKekka
+        self.present(vc, animated: true, completion: nil)
+    }
+    
  }

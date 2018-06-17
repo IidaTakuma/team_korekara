@@ -13,7 +13,7 @@
         <!--User Kekka-->
         <scene sceneID="e28-bC-54X">
             <objects>
-                <viewController id="Jxg-aS-Z7J" customClass="UserKekka" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userkekka" id="Jxg-aS-Z7J" customClass="UserKekka" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0Z-3v-Gwl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -13,7 +13,7 @@
         <!--Item-->
         <scene sceneID="1Uo-VD-IQ2">
             <objects>
-                <viewController id="1wW-1Q-jwa" customClass="KanjiStart" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="kanjistart" id="1wW-1Q-jwa" customClass="KanjiStart" customModule="karaoke_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FXk-TJ-uN6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,14 @@
                                 </state>
                                 <connections>
                                     <action selector="huriwke:" destination="1wW-1Q-jwa" eventType="touchUpInside" id="2PU-vx-2yW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYd-mC-0Cu">
+                                <rect key="frame" x="172" y="575" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="kettei:" destination="1wW-1Q-jwa" eventType="touchUpInside" id="oWD-D2-QOO"/>
                                 </connections>
                             </button>
                         </subviews>

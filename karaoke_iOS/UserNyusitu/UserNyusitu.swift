@@ -26,7 +26,9 @@ class UserNyusitu: UIViewController {
     }
     
     @IBAction func NyushitsuButton(_ sender: Any) {
-        nyushitsu()
+        let storyBoard = UIStoryboard(name:"UserTaiki", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "usertaiki") as! UserTaiki
+        self.present(vc, animated: true, completion: nil)
     }
     
     /*
