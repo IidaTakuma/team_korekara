@@ -9,6 +9,14 @@
 import UIKit
 import Alamofire
 
+
+struct GroupParam: Codable {
+    var id: String
+//    var name: String
+    var number: Int
+//    var users: [UserParam]
+}
+
 class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var roomId: UITextField!
@@ -72,19 +80,30 @@ class KanjiHeyaSakusei: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
 
     @IBAction func roomMake(_ sender: Any) {
+        guard let number = Int(peopleCount.text!) else {
+            return
+        }
         let parameters: Parameters = [
             "id": roomId.text!,
-            "password": password.text!,
-            "number": Int(peopleCount.text!)!
+//            "password": password.text!,
+            "number": number
         ]
         print(parameters)
         let header: HTTPHeaders = [
             "Access-Token": UserDefaults.standard.string(forKey: "access_token")!
         ]
-        Alamofire.request(Const.GroupsAPI, method: .post, parameters: parameters, headers: header).validate(statusCode: 200..<400).responseData { response in
+        Alamofire.request(Const.GroupsAPI, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: header).validate(statusCode: 200..<400).responseData { response in
             switch response.result {
             case .success:
-                self.next()
+                guard let data = response.data else { return }
+                do {
+                    let group = try JSONDecoder().decode(GroupParam.self, from: data)
+                    print(group)
+                    // wip: 次はroomの作成
+                    self.next()
+                } catch {
+                    print("json convert failed in JSONDecoder", error.localizedDescription)
+                }
             case .failure:
                 print("failure")
             }
