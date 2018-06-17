@@ -10,6 +10,7 @@ import UIKit
 
 class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource   {
     var sepSelect = ["ランダム","アーティスト"]
+    var selectedbtnTag: Int = 0
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
     return sepSelect.count
     }
@@ -36,8 +37,9 @@ class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  
     didSelectRow row: Int,
     inComponent component: Int) {
     // 処理
-    //artists[row]で値をとる
+    //sepSelect[row]で値をとる
     print("取り出し" + String(sepSelect[row]))
+        huriBtn.setTitle(String(sepSelect[row]), for: UIControlState.normal)
         
     }
     @IBOutlet weak var roomKakuninId: UILabel!
@@ -45,6 +47,7 @@ class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  
     
     @IBOutlet weak var picker: UIPickerView!
     
+    @IBOutlet weak var huriBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -61,6 +64,31 @@ class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func huriwke(_ sender: Any) {
+   
+    
+    let alertView = UIAlertController(
+        title: "お気に入りのアーティスト",
+        message: "\n\n\n\n\n\n\n\n\n",
+        preferredStyle: .alert)
+    
+    let sepSelect = UIPickerView(frame:
+        CGRect(x: 0, y: 50, width: 260, height: 162))
+    sepSelect.dataSource = self
+    sepSelect.delegate = self
+    
+    // comment this line to use white color
+    sepSelect.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
+    
+    alertView.view.addSubview(sepSelect)
+    
+    let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+    
+    alertView.addAction(action)
+        selectedbtnTag = (sender as AnyObject).tag
+    self.present(alertView, animated: true, completion: {
+    sepSelect.frame.size.width = alertView.view.frame.size.width
+    })
 
     /*
     // MARK: - Navigation
@@ -72,4 +100,4 @@ class KanjiStart: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource  
     }
     */
     }
-
+ }
