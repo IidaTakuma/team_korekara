@@ -13,11 +13,11 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     var artists = [["1","2","3"],["1","2","3"],["1","2","3"]]
     
     func API_tuushin(){
-        let parameter = {
-            "name":String,
-           "airtist_ids":[UUID],
-           "is_public":Bool
-        }
+        let parameter = [
+            name: String
+            airtist_ids: [UUID],
+            is_public: Bool
+        ]
         let authToken = [
             "Access-Token": UserDefaults.standard.string(forKey: "Access-Token")
         ]
@@ -30,8 +30,8 @@ class ViewController: UIViewController, UIPickerViewDelegate,UIPickerViewDataSou
     
     func UUID_seisei() {
         
-        let uuid = NSUUID().uuidString
-        UserDefaults.standard.set(uuid, forKey: "UUID")
+        let uuid = NSUUID().UUIDString
+        UserDefaults.standardUserDefaults().setString(uuid, forKey: "UUID")
         let parameter = [
             uuid:uuid
         ]
